@@ -9,14 +9,14 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
-      <h1 className="w-full text-3xl font-bold text-[black]">WsCube Tech.</h1>
+    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-black">
+      <h1 className="w-full text-3xl font-bold text-[black]">Shop<span className="text-orange-500">Gul</span></h1>
       <ul className="hidden md:flex">
-        <li className="p-4">Home</li>
-        <li className="p-4">Company</li>
-        <li className="p-4">Resources</li>
-        <li className="p-4">About</li>
-        <li className="p-4">Contact</li>
+        <li className="p-4 font-semibold hover:text-orange-500 duration-200 cursor-pointer">Home</li>
+        <li className="p-4 font-semibold hover:text-orange-500 duration-200 cursor-pointer">Company</li>
+        <li className="p-4 font-semibold hover:text-orange-500 duration-200 cursor-pointer">Shop</li>
+        <li className="p-4 font-semibold hover:text-orange-500 duration-200 cursor-pointer">About</li>
+        <li className="p-4 font-semibold hover:text-orange-500 duration-200 cursor-pointer">Contact</li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -28,11 +28,11 @@ const Navbar = () => {
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
-        <h1 className="w-full text-3xl font-bold text-[black] m-4">REACT.</h1>
-        <li className="p-4 border-b border-gray-600">Home</li>
-        <li className="p-4 border-b border-gray-600">Company</li>
-        <li className="p-4 border-b border-gray-600">Resources</li>
-        <li className="p-4 border-b border-gray-600">About</li>
+        <h1 className="w-full text-3xl font-bold text-white m-4">Shop<span className="text-orange-500">Gul</span></h1>
+        <li className="p-4 border-b  hover:text-orange-500 duration-200 cursor-pointer border-orange-500 text-white">Home</li>
+        <li className="p-4 border-b  hover:text-orange-500 duration-200 cursor-pointer border-orange-500 text-white">Company</li>
+        <li className="p-4 border-b  hover:text-orange-500 duration-200 cursor-pointer border-orange-500 text-white">Resources</li>
+        <li className="p-4 border-b  hover:text-orange-500 duration-200 cursor-pointer border-orange-500 text-white">About</li>
         <li className="p-4">Contact</li>
       </ul>
     </div>
