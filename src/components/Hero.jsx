@@ -6,24 +6,24 @@ const Hero = () => {
   return (
     <div className='text-black h-[800px] px-4 mx-auto max-w-[1240px]'>
       <div className=' item-center w-full h-screen  flex flex-col md:flex-row'>
-       <div className="  left-banner flex flex-col   md:h-auto w-[full] md:w-[50%] justify-center">
+       <div className="  left-banner flex flex-col mt-[50px]  md:h-auto w-[full] w-full md:w-[50%] justify-start md:justify-center">
         
         <h1 className='md:text-6xl sm:text-6xl text-4xl font-bold md:py-6'>
           Blessed Friday Sale
         </h1>
         <div className='flex items-center'>
-          <p className='md:text-5xl sm:text-4xl text-xl font-bold py-4 text-black'>
+          <p className='md:text-5xl sm:text-4xl text-2xl font-bold py-4 text-black'>
             Shop
           </p>
           <Typed
-            className='md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2 text-orange-500'
+            className='md:text-5xl sm:text-4xl text-2xl font-bold md:pl-4 pl-2 text-orange-500'
             strings={['Watches', 'Airpods', 'Headphones']}
             typeSpeed={120}
             backSpeed={140}
             loop
           />
         </div>
-        <button className='md:ml-0 bg-[black] w-[100px] md:w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-white hover:text-orange-500 duration-200'>Shop Now</button>
+        <button className='ml- bg-[black] w-[140px] md:w-[200px] rounded-md font-medium my-6  py-3 text-white hover:text-orange-500 duration-200'>Shop Now</button>
       </div>
       <div className="right-banner md:w-[50%] flex justify-end items-center w-[full]">
       <img className='w-[400px] mx-auto ' src={Laptop} alt='/' />

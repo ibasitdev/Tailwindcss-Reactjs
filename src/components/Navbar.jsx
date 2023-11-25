@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-black">
+    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-black shadow-sm">
       <h1 className="w-full text-3xl font-bold text-[black]">Shop<span className="text-orange-500">Gul</span></h1>
       <ul className="hidden md:flex">
         <li className="p-4 font-semibold hover:text-orange-500 duration-200 cursor-pointer">Home</li>
